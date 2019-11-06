@@ -63,12 +63,12 @@ const getDomos = (request, response) => {
     if (err) {
       console.log(err);
       return res.status(400).json({
-        error: 'An error occurred'
+        error: 'An error occurred',
       });
     }
 
     return res.json({
-      domos: docs
+      domos: docs,
     });
   });
 };
